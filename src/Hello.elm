@@ -1,9 +1,10 @@
 import Html exposing (Html, a, text, div, h1, ul, li)
-import Html.Attributes exposing (href)
+import Html.Attributes exposing (href, class)
 
 main : Html msg
 main =
     div [] [ header, content ] -- div要素の子要素にheaderとcontentを定義する
+    -- div [ class "top-div" ] [] -- class属性を指定する場合は、こう
 
 header : Html msg
 header =
